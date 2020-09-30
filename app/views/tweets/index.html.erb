@@ -2,14 +2,20 @@
   <%= flash[:notice] %>
 <% end %>
 
+
 <% @tweets.each do |tweet| %>
-  <p><%= tweet.message %></p>
-  <% ttime = tweet.tdate %>
-  <font size="2"<p><%= "#{((Time.current - ttime) / 60 ).to_i}分前に投稿" %></p></font>
-  <%= link_to 'つぶやきを削除', "/tweets/#{tweet.id}", method: :delete %>
-  <%= link_to 'つぶやきの編集', "/tweets/#{tweet.id}/edit" %>
-  <%= link_to '表示', "/tweets/#{tweet.id}" %>
-  <p>-------------------------</p>
+  <div id="tweet">
+    <div id="tweet-left">
+      <div id="tweet-icon-area">
+        <img id="icon" src="/assets/header-image2.jpg" />
+      </div>
+    </div>
+  <strong>近畿大学</strong><div id="tweet-time"><%= "#{((Time.current - tweet.tdate) / 60 ).to_i}分前に投稿" %></div><br>
+  <%= tweet.message %>
+  <%= link_to '削除', tweet_path(tweet.id), method: :delete %>
+  <%= link_to '編集', edit_tweet_path(tweet.id)  %>
+  <%= link_to '表示', tweet_path(tweet.id) %>
+  </div>
 <% end %>
 
-<p><%= link_to 'つぶやく','/tweets/new' %></p>
+

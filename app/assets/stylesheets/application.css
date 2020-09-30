@@ -13,3 +13,148 @@
  *= require_tree .
  *= require_self
  */
+
+h2 {
+    border-bottom: double 3px #555555;
+    padding-left: 0.5em;
+}
+
+
+#container {
+    background-color: #EEFFFF;
+}
+
+#content {
+    width: 75%;
+    float: right;
+    
+    
+    /* padding: 0.5em 0em; */
+    /* margin: 2em 0;  */
+    /* font-weight: bold;  */
+    color: #000000;      /*文字色*/ 
+    /* background: #FFFFCC;  */
+    /* border: solid 3px #6091d3;/*線*/ 
+    /* border-radius: 10px;/*角の丸み*/
+    
+}
+
+
+#tweet {
+    height: 200px;
+    padding:  0.5em 1em;
+    margin: 1em 0;
+    color: #000000;
+    background: #FFFFFF;
+    /* border-top: solid 10px #5995b3; */
+    
+    
+}
+
+#tweet-left {
+    width: 11%;
+    height: 100%;
+    float: left;
+    margin: 0 1em 0 0;
+    
+    color: #000000;
+ 
+}
+
+#tweet-icon-area {
+    width: 110px;
+    height: 110px;
+    
+    
+    
+    color: #000000;
+ 
+}
+
+#tweet-time {
+    font-size: 2px;
+}
+
+#header {
+    height: 200px;
+    
+    padding: 0.5em 1em;
+    margin:  0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border-bottom: solid 1px grey;/*線*/
+    /* border-radius: 10px;/*角の丸み*/
+    
+    background-image: url(/assets/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-left {
+    width: 20%;
+    height: 100%;
+    float: left;
+    margin: 0 1em 0 0;
+    
+    color: #000000;
+    
+  
+}
+
+#header-icon-area {
+    width: 250px;
+    height: 250px;
+    float: left;
+    
+  
+    color: #000000;
+ 
+}
+
+#header-banner-area {
+    height: 20% ;
+        
+    background-image: url(/assets/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#icon {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    border: 5px solid #FFF; /* 枠線を付加 */
+    background-position: left top;
+}
+
+#sidebar {
+    float: left;
+    width: 20%;
+    
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #000000;/*文字色*/
+}
+
+#footer {
+    text-align: center;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+#copyright {
+    font-size: 15px;
+}
+
+#indent {
+    margin: 1em;
+}
