@@ -2,7 +2,7 @@
   <%= flash[:notice] %>
 <% end %>
 
-
+<div id="tweet-tab">ツイート　ツイートと返信　メディア</div>
 <% @tweets.each do |tweet| %>
   <div id="tweet">
     <div id="tweet-left">
@@ -10,11 +10,12 @@
         <img id="icon" src="/assets/header-image2.jpg" />
       </div>
     </div>
-  <strong>近畿大学</strong><div id="tweet-time"><%= "#{((Time.current - tweet.tdate) / 60 ).to_i}分前に投稿" %></div><br>
-  <%= tweet.message %>
+  <strong>近畿大学</strong><font id="userid">@kinkidaigakuPR・<%= tweet.tdate.month %>月<%= tweet.tdate.day %>日</font><div id="tweet-time"><%= "#{((Time.current - tweet.tdate) / 60 ).to_i}分前に投稿" %></div>
+  <p><%= tweet.message %></p>
   <%= link_to '削除', tweet_path(tweet.id), method: :delete %>
   <%= link_to '編集', edit_tweet_path(tweet.id)  %>
   <%= link_to '表示', tweet_path(tweet.id) %>
+  
   </div>
 <% end %>
 

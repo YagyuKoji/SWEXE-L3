@@ -14,28 +14,15 @@
  *= require_self
  */
 
-h2 {
-    border-bottom: double 3px #555555;
-    padding-left: 0.5em;
-}
-
-
 #container {
     background-color: #EEFFFF;
 }
 
 #content {
-    width: 75%;
+    width: 70%;
     float: right;
-    
-    
-    /* padding: 0.5em 0em; */
-    /* margin: 2em 0;  */
-    /* font-weight: bold;  */
-    color: #000000;      /*文字色*/ 
-    /* background: #FFFFCC;  */
-    /* border: solid 3px #6091d3;/*線*/ 
-    /* border-radius: 10px;/*角の丸み*/
+    color: #000;      /*文字色*/ 
+    padding: 0 1% 0 0;
     
 }
 
@@ -43,29 +30,54 @@ h2 {
 #tweet {
     height: 200px;
     padding:  0.5em 1em;
-    margin: 1em 0;
+    margin: 0.1em 0;
     color: #000000;
-    background: #FFFFFF;
-    /* border-top: solid 10px #5995b3; */
+    background: #FFF;
+    border: solid 1px #EEEEEE;/*線*/ 
     
     
 }
 
+#tweet-button {
+    border-radius: 20px;
+    background: #2C7CFF;
+    color: #fff;
+    width: 7em;
+    height: 2em;
+    text-align: center;
+    display: inline-block;
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+#tweet-tab {
+    height: 30px;
+    
+    padding:  0.5em 1em;  
+    margin: 1em 0 0 0;
+    color: #000000;
+    background: #FFF;
+    border: solid 1px #EEEEEE;/*線*/ 
+    font-size: 25px;
+    
+
+    
+}
+
 #tweet-left {
-    width: 11%;
+    width: 6%;
     height: 100%;
     float: left;
     margin: 0 1em 0 0;
-    
     color: #000000;
  
 }
 
 #tweet-icon-area {
-    width: 110px;
-    height: 110px;
-    
-    
+    width: 60px;
+    height: 60px;
+    padding: 1em 0 0 0;
+
     
     color: #000000;
  
@@ -77,25 +89,20 @@ h2 {
 
 #header {
     height: 200px;
-    
-    padding: 0.5em 1em;
-    margin:  0;
+    /* padding: 0.5em 1em; */
     font-weight: bold;
     color: #6091d3;/*文字色*/
     background: #FFF;
-    border-bottom: solid 1px grey;/*線*/
+    border-bottom: solid 2px #CCCCCC;/*線*/
     /* border-radius: 10px;/*角の丸み*/
     
-    background-image: url(/assets/header-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #header-left {
     width: 20%;
     height: 100%;
     float: left;
-    margin: 0 1em 0 0;
+    margin: 1em 5em;
     
     color: #000000;
     
@@ -106,14 +113,12 @@ h2 {
     width: 250px;
     height: 250px;
     float: left;
-    
-  
     color: #000000;
  
 }
 
 #header-banner-area {
-    height: 20% ;
+    height: 70% ;
         
     background-image: url(/assets/header-background.jpg);
     background-repeat: no-repeat;
@@ -131,15 +136,31 @@ h2 {
 #sidebar {
     float: left;
     width: 20%;
-    
-    padding: 0.5em 1em;
-    margin: 2em 0;
+    margin: 0.5em 0;
+    padding: 2em 2em; /*枠外側 */
     color: #000000;/*文字色*/
 }
+
+#sidebar-message {
+    height: 30%;
+}
+
 
 #footer {
     text-align: center;
     clear: both;
+}
+
+.userList {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+
+#userid {
+    color: grey;
+    font-size: 15px;
 }
 
 
